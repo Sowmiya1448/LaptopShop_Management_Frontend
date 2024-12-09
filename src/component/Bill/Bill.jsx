@@ -196,7 +196,7 @@ useEffect(() =>{
 
 
                 <label htmlFor="">Quantity:</label>
-                <input type="number"  onChange={event => updateLaptop(event,index, "quantity")} />&nbsp;
+                <input type="number" style={{margin:"10px"}} onChange={event => updateLaptop(event,index, "quantity")} />&nbsp;
            
               
 

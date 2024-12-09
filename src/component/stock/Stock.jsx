@@ -124,7 +124,7 @@ const categorys = category.map((cat, index) => {
                     {categorys}
                 </select> &nbsp; &nbsp;
 
-                <input type="submit" className='btn btn-info' onClick={(event) => submitHandle(event)} /> <br /> <br />
+                <input type="submit" className='btn btn-info' style={{margin:"10px"}} onClick={(event) => submitHandle(event)} /> <br /> <br />
               
 
             </div>
@@ -133,7 +133,7 @@ const categorys = category.map((cat, index) => {
                 <div>
                 <h2 className='text-center'>Stock_list</h2> <br /><br />
 
-                <div className='container-fluid'>
+                <div className='container-fluid table-responsive'>
                  <table className='table table-bordered text-center' style={{width:'75%',marginLeft:"10%"}} >
                      <thead>
                          <tr>

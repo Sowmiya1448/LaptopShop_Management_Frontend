@@ -85,18 +85,21 @@ return (
            
             <h2 className='text-center' style={{padding:"20px"}}>Category</h2> <br />
 
-            <div className='container-fluid' style={{marginLeft:"600px"}}>
+            <div className='container-fluid text-center'>
+
                 <label htmlFor="">category type:</label> &nbsp;
 
                 <input type="text" value={category_name} onChange={event => setCategory(event.target.value)} /> &nbsp;
 
-                <input type="submit" className='btn btn-info' onClick={event => submithandle(event)} />
+                <input type="submit" className='btn btn-info' onClick={event => submithandle(event)}  style={{margin:"10px"}}/>
             </div>
+
              <br />
 
             <h2 className='text-center'> Category List</h2> <br />
 
-            <table className='table table-bordered' style={{width: "60%",marginLeft:"400px"}}>
+       <div className='container-fluid table-responsive'>
+       <table className='table table-bordered table-responsive'  style={{width:'75%',marginLeft:"10%"}} >
                 <thead>
                     <tr>
                         <th>S.no</th>
@@ -109,6 +112,7 @@ return (
 
                 </tbody>
             </table>
+       </div>
 
 
 

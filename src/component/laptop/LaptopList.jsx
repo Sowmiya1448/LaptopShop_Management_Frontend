@@ -65,7 +65,7 @@ const LaptopList = () => {
                 <td>{data.modelno}</td>
                 <td>{data.price}</td>
                 <td>{cate?cate.categoryname:"-"}</td>
-                <td><button className='btn btn-info' onClick={() => navigate(`/lap/update/${data._id}/`)}>Update</button></td>
+                <td><button className='btn btn-warning' onClick={() => navigate(`/lap/update/${data._id}/`)}>Update</button></td>
                 <td><button className='btn  btn-danger' data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                 onClick={() => setSelectId(data)}>Delete</button></td>
 
@@ -138,11 +138,12 @@ useEffect(() =>{
                 <button className='btn  btn-info float-end' onClick={() => navigate('/add/')}>
                     + Add LaptopList
                 </button>
+                <br />
             </div> <br />
 
 
-            <div style={{ paddingTop: "50px",width:"60%",marginLeft:"300px"}} className='container-fluid'>
-                <table style={{ textAlign: 'center', width: "100%" }} className="table table-bordered">
+            <div className='container-fluid table-responsive table-center'>
+                <table  className="table table-bordered"  style={{width:'75%',marginLeft:"10%"}} >
                     <thead>
                         <tr>
                             <th>S.NO</th>

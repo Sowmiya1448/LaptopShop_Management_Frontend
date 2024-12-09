@@ -62,8 +62,8 @@ const Bill_list = () => {
                  (data.bill_data.bill_status === "unpaid")? (<p style={{color:"red",fontWeight:"bold",border:"2px solid red"}}>{data.bill_data.bill_status}</p>) :
                   (<p style={{color:"orange",fontWeight:"bold"}}>{data.bill_data.bill_status}</p>)}</td>
 
-                <td><button className='btn btn-info' onClick={() => navigate(`/view/${data.bill_data._id}/`)}>View</button></td>
-                <td><button className='btn btn-secondary' onClick={() => navigate(`/billupdate/${data.bill_data._id}`)} >Update</button></td>
+                <td><button className='btn btn-outline-info' onClick={() => navigate(`/view/${data.bill_data._id}/`)}>View</button></td>
+                <td><button className='btn btn-outline-secondary' onClick={() => navigate(`/billupdate/${data.bill_data._id}`)} >Update</button></td>
                 <td><button className='btn btn-danger' data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick={() => setDel(data.bill_data)} >Delete</button></td>
 
             </tr>
@@ -78,8 +78,8 @@ const Bill_list = () => {
           
             <h2 className='text-center'>Bill List</h2> <br /> <br />
 
-            <div className='container-fluid'>
-                <table style={{ textAlign: 'center', width: "70%",marginLeft:"200px"}} className='table table-bordered text-center'>
+            <div className='container-fluid table-responsive'>
+                <table className='table table-bordered text-center '  style={{width:'75%',marginLeft:"10%"}} >
                     <thead>
                         <tr>
                             <th>S.no</th>

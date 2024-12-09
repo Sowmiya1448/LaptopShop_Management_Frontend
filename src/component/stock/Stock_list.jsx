@@ -85,8 +85,8 @@ const Stock_list = () => {
 
 
 
-            <div className='container-fluid'>
-                <table className='table table-bordered text-center' style={{ width: '75%', marginLeft: "10%" }} >
+            <div className='container-fluid table-responsive'>
+                <table className='table table-bordered text-center' style={{width:'75%',marginLeft:"10%"}}  >
                     <thead>
                         <tr>
                             <th>S.no</th>

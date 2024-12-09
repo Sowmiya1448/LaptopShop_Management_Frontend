@@ -72,8 +72,8 @@ const Customerlist = () => {
             </div>
             <br />
 
-            <div className='container-fluid' style={{marginLeft:"300px"}}>
-                <table className='table table-bordered text-center' style={{ width: "60%" }}>
+            <div className='container-fluid table-responsive'>
+                <table className='table table-bordered text-center' style={{width:'75%',marginLeft:"10%"}}  >
                     <thead>
                         <tr>
                             <th>S.no</th>

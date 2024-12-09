@@ -83,8 +83,8 @@ const Paymentlist = () => {
 
             <h2 className='text-center' style={{padding:"20px"}}>Payment</h2> <br /> <br />
 
-            <div className='container-fluid' style={{width:"60%"}}>
-                <table className='table table-bordered text-center' >
+            <div className='container-fluid table-responsive'>
+                <table className='table table-bordered text-center'  style={{width:'75%',marginLeft:"10%"}}  >
                     <thead>
                         <tr>
                             <th>S.no</th>

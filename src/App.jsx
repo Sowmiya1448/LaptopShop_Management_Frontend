@@ -33,12 +33,15 @@ const App = () => {
 
     const [vaild_user, setValiduser] = useState(false)
 
+   
+
 
     useEffect(() => {
 
         if (localStorage.getItem('vaild_user') !== null) setValiduser(true)
+        if(localStorage.getItem('nav') === 'true') setView(true)    
 
-    })
+    },[])
 
     return (
 
@@ -46,11 +49,12 @@ const App = () => {
         <div>
 
             <Provider store={store}>
+
                 {view === true && <Navbar setview={setView}></Navbar>}
+
                 <Routes>
                     <Route path='/' element={<Login setview={setView} />} />
                     <Route path='/signup/' element ={<Signup/>}/>
-
                     <Route path='/add' element={<Laptopadd />} />
                     <Route path='/laptop' element={<LaptopList />} />
                     <Route path='/lap/update/:id' element={<LaptopUpdate />} />
