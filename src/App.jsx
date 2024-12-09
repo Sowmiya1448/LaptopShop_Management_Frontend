@@ -23,8 +23,7 @@ import Paymentlist from './component/payment/Paymentlist'
 import Pay from './component/payment/Pay'
 import Payupdate from './component/payment/Payupdate'
 
-import { store } from './Redux/store'
-import { Provider } from 'react-redux'
+
 
 
 const App = () => {
@@ -48,7 +47,7 @@ const App = () => {
 
         <div>
 
-            <Provider store={store}>
+      
 
                 {view === true && <Navbar setview={setView}></Navbar>}
 
@@ -76,7 +75,7 @@ const App = () => {
 
 
                 </Routes>
-            </Provider>
+           
 
         </div>
 

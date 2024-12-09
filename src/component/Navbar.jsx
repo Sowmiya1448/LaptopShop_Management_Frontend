@@ -79,15 +79,7 @@ const Navbar = ({setview}) => {
 
                             </li>
 
-                            {/* <li>
-                                <NavLink className={'nav-link'} to={'/'}>stu1</NavLink>
-
-                            </li>
-
-                            <li>
-                                <NavLink className={'nav-link'} to={'/stu2/'}>stu2</NavLink>
-
-                            </li> */}
+                      
 
                    
 
